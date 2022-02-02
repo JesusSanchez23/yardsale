@@ -1,0 +1,162 @@
+html {
+    font-size: 67.5%;
+}
+
+:root {
+    /* COLORS */
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --white: #FFFFFF;
+    --black: #000000;
+    /* fONTS */
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 40rem;
+}
+
+.logo {
+    width: 15rem;
+    margin-bottom: 5rem;
+    justify-self: center;
+    display: none;
+}
+
+.title {
+    font-family: var(--lg);
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 3rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: .4rem;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 1rem;
+    height: 3rem;
+    font-size: var(--md);
+    padding: .6rem;
+    margin-bottom: 1.2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.primary-button {
+    border-radius: 1rem;
+    border: none;
+    color: #FFFFFF;
+    background-color: var(--hospital-green);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 4rem;
+}
+
+.login-button {
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+
+/* CSS page about message sent */
+
+.email-image {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    background-color: var(--text-input-field);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.email-image img {
+    width: 7rem;
+}
+
+.resend {
+    font-size: var(--sm);
+}
+
+.resend span {
+    color: var(--very-light-pink);
+}
+
+.resend a {
+    color: var(--hospital-green);
+    text-decoration: none;
+}
+
+.center-image {
+    justify-items: center;
+}
+
+
+/* sección de login */
+
+.forgot {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.secondary-button {
+    background-color: var(--white);
+    color: var(--hospital-green);
+    border: 1px solid var(--hospital-green);
+    padding: 1rem 0;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+
+/* media queries */
+
+@media (max-width:640px) {
+    .logo {
+        display: block;
+    }
+    .forgot {
+        margin-bottom: 15rem;
+    }
+}
